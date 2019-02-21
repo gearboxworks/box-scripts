@@ -31,11 +31,25 @@ echo "   - http://gearbox.github.io/"
 tput sgr0
 echo ""
 
-echo "Connect to your GearBox:"
-echo ""
 tput setaf 3
+echo "Connect to your GearBox:"
 echo "   - https://gearbox.local/"
 echo "   - http://gearbox.local/"
 tput sgr0
 echo ""
+
+exit 0
+
+
+ip="$(ip addr show eth1 | awk '/inet /{gsub(/\/.*/, "", $2); print$2}')"
+if [ "${ip}" != "" ]
+then
+	tput setaf 3
+	echo "Connect to your GearBox:"
+	echo "   - http://${ip}/"
+	tput sgr0
+	echo ""
+fi
+
+exit 0
 
