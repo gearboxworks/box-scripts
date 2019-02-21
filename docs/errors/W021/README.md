@@ -7,23 +7,23 @@
      \/  \/   |_|    |______|_|_.__/  |____/ \___/_/\_\
 ```
 
-![WPLib-Box](https://github.com/wplib/box-scripts/blob/master/WPLib-Box-100x.png)
+![GearBox](https://github.com/wplib/box-scripts/blob/master/GearBox-100x.png)
 
 # W021 - box-scripts not present.
 
 ## Cause
-The /opt/box scripts are not present on the Box.
+The /opt/gearbox scripts are not present on the Box.
 
 ## Common fixes
 Pull down the latest box-scripts by doing the following:
-* sudo git clone -q https://github.com/wplib/box-scripts/ /opt/box
+* sudo git clone -q https://github.com/wplib/box-scripts/ /opt/gearbox
 Run an update:
-* /opt/box/bin/box self-update
+* /opt/gearbox/bin/box self-update
 
 
 ### 
 
 
 ## See Also
-[Complete Error code repository for WPLib Box](https://github.com/wplib/box-scripts/tree/master/docs/errors)
+[Complete Error code repository for GearBox](https://github.com/wplib/box-scripts/tree/master/docs/errors)
 
