@@ -7,7 +7,7 @@ else
         VERSION="Unknown"
 fi
 
-echo "Welcome to GearBox $VERSION."
+echo "Welcome to Gearbox $VERSION."
 echo ""
 
 tput setaf 2
@@ -27,11 +27,11 @@ tput sgr0
 echo " for help, or see the docs at:"
 echo ""
 tput setaf 3
-echo "   - http://gearbox.github.io/"
+echo "   - https://help.gearbox.works/"
 tput sgr0
 echo ""
 
-echo "Connect to your GearBox:"
+echo "Connect to your Gearbox on either:"
 echo ""
 tput setaf 3
 echo "   - https://gearbox.local/"
