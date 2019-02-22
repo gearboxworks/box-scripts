@@ -490,10 +490,16 @@ EOF
 }
 
 ################################################################################
-CMD="$1"
-shift
+declare="${IMAGES:=}"
+declare="${BOX_FUNCTIONS_FILE:=}"
+
+source "${BOX_FUNCTIONS_FILE}"
+
 # Creates IMAGES and STACK env variables.
 readJSON
+
+CMD="$1"
+shift
 
 if [ "${STACK["wordpress/dbserver"]}" == "" ]
 then
