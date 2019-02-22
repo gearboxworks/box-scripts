@@ -46,11 +46,11 @@ then
 	echo "Updating boxuser"
 	sudo usermod -o -d "${BOX_USER_HOME}" -c "GearBox user" -u "${BOX_USER_UID}" -g "${BOX_USER_GID}" -s /bin/bash "${BOX_USER}"
 fi
-sudo usermod -aG adm,cdrom,docker "${BOX_USER}"
-sudo chmod 0775 "${BOX_USER_HOME}"
-sudo mkdir -pm 0700 "${BOX_USER_HOME}/.ssh"
-sudo chmod 0700 "${BOX_USER_HOME}/.ssh"
-sudo chmod 0600 "${BOX_USER_HOME}/.ssh/authorized_keys" "${BOX_USER_HOME}/.bash_history" "${BOX_USER_HOME}/.Xauthority"
+sudo usermod -aG adm,cdrom,docker "${BOX_USER}" 2>/dev/null
+sudo chmod 0775 "${BOX_USER_HOME}" 2>/dev/null
+sudo mkdir -pm 0700 "${BOX_USER_HOME}/.ssh" 2>/dev/null
+sudo chmod 0700 "${BOX_USER_HOME}/.ssh" 2>/dev/null
+sudo chmod 0600 "${BOX_USER_HOME}/.ssh/authorized_keys" "${BOX_USER_HOME}/.bash_history" "${BOX_USER_HOME}/.Xauthority" 2>/dev/null
 
 # Change permissions.
 sudo chown -R "${BOX_USER_UID}:${BOX_USER_GID}" "${BOX_USER_HOME}/."
