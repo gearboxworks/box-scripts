@@ -14,7 +14,7 @@ case $1 in
 		;;
 
 	*)
-		box container ls
+		box component ls
 		;;
 esac
 
