@@ -9,7 +9,7 @@ fi
 
 if [ -e /opt/gearbox/last-commit-date ]
 then
-	VERSION="($(cat /opt/gearbox/last-commit-date))"
+	COMMIT="($(cat /opt/gearbox/last-commit-date))"
 else
 	COMMIT=""
 fi
