@@ -2,12 +2,19 @@
 
 if [ -e /opt/gearbox/version ]
 then
-        VERSION="`cat /opt/gearbox/version`"
+	VERSION="$(cat /opt/gearbox/version)"
 else
-        VERSION="Unknown"
+	VERSION="Unknown"
 fi
 
-echo "Welcome to Gearbox $VERSION."
+if [ -e /opt/gearbox/last-commit-date ]
+then
+	VERSION="($(cat /opt/gearbox/last-commit-date))"
+else
+	COMMIT=""
+fi
+
+echo "Welcome to Gearbox $VERSION. ${COMMIT}"
 echo ""
 
 tput setaf 2
