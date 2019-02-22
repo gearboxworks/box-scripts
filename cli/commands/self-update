@@ -53,8 +53,8 @@ git add -A .
 git pull -q
 # Finally checkout the branch/tag.
 git checkout -q "${VERSION}" 2>/dev/null
-git log -1 --format=%cd --date=unix > last-commit-epoch
-git log -1 --format=%cd > last-commit-date
+git log -1 --format=%cd --date=unix > ${BOX_BASE_DIR}/last-commit-epoch
+git log -1 --format=%cd > ${BOX_BASE_DIR}/last-commit-date
 echo "Done"
 
 echo -n "# GearBox: Fixing links ... "
