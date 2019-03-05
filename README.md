@@ -1,9 +1,9 @@
-![Latest Stable Version](https://img.shields.io/badge/stable-0.17.0-blue.svg)
-![Latest Testing Version](https://img.shields.io/badge/testing-0.17.1-red.svg)
+![Latest Stable Version](https://img.shields.io/badge/stable-0.5.0-blue.svg)
+![Latest Testing Version](https://img.shields.io/badge/testing-0.5.1-red.svg)
 
 
 
-![GearBox](https://github.com/wplib/wplib.github.io/raw/master/GearBox-100x.png)
+![GearBox](https://github.com/gearboxworks/wplib.github.io/raw/master/GearBox-100x.png)
 
 
 # Box Scripts for the GearBox
@@ -13,7 +13,7 @@
 Box Scripts contain scripts designed for both running _**inside**_ GearBox. In a future version it will also run on the host computer alongside GearBox. 
 
 ## Installation
-If you are using [GearBox 0.10.9 or later](https://github.com/wplib/wplib-box) it will automatically have been installed.
+If you are using [GearBox 0.5.0 or later](https://github.com/gearboxworks/) it will automatically have been installed.
 
 
 ## Getting Help
@@ -21,27 +21,27 @@ After that type `box` to get a list of commands, or explicitly specify `help`:
 
     box help
 
-![box help](https://github.com/wplib/box-scripts/raw/0.17.0/docs/Help-box.png)
+![box help](https://github.com/gearboxworks/box-scripts/raw/0.5.0/docs/Help-box.png)
 
-![box container](https://github.com/wplib/box-scripts/raw/0.17.0/docs/Help-container.png)
+![box container](https://github.com/gearboxworks/box-scripts/raw/0.5.0/docs/Help-container.png)
 
-![box database](https://github.com/wplib/box-scripts/raw/0.17.0/docs/Help-database.png)
+![box database](https://github.com/gearboxworks/box-scripts/raw/0.5.0/docs/Help-database.png)
 
-![box test](https://github.com/wplib/box-scripts/raw/0.17.0/docs/Help-test.png)
+![box test](https://github.com/gearboxworks/box-scripts/raw/0.5.0/docs/Help-test.png)
 
 Do NOT forget to first enter the GearBox command line by first running this command from your *host* computer's command line:
 
-    vagrant up
+    gearbox vm start
 
-![vagrant up](https://github.com/wplib/box-scripts/raw/0.17.0/docs/vagrant-up.png)
+![gearbox start](https://github.com/gearboxworks/box-scripts/raw/0.5.0/docs/vagrant-up.png)
 
-    vagrant ssh
+    gearbox ssh
 
-![vagrant ssh](https://github.com/wplib/box-scripts/raw/0.17.0/docs/vagrant-ssh.png)
+![gearbox ssh](https://github.com/gearboxworks/box-scripts/raw/0.5.0/docs/vagrant-ssh.png)
 
-    vagrant halt
+    gearbox vm stop
 
-![vagrant halt](https://github.com/wplib/box-scripts/raw/0.17.0/docs/vagrant-halt.png)
+![gearbox vm stop](https://github.com/gearboxworks/box-scripts/raw/0.5.0/docs/vagrant-halt.png)
 
 
 ## Status/Disclaimer

@@ -7,11 +7,11 @@
      \/  \/   |_|    |______|_|_.__/  |____/ \___/_/\_\
 ```
 
-![GearBox](https://github.com/wplib/box-scripts/blob/master/docs/GearBox-100x.png)
+![GearBox](https://github.com/gearboxworks/box-scripts/blob/master/docs/GearBox-100x.png)
 
 # Error code repository for GearBox
-This is the error code repository for [GearBox](https://github.com/wplib/wplib-box) and contains hints and howtos to fix common issues.
-More than likely you will be directed to one of the error code pages from [GearBox](https://github.com/wplib/wplib-box) when you come across an error.
+This is the error code repository for [GearBox](https://github.com/gearboxworks/gearbox) and contains hints and howtos to fix common issues.
+More than likely you will be directed to one of the error code pages from [GearBox](https://github.com/gearboxworks/gearbox) when you come across an error.
 
 ## Error code structure
 `Wxxx` - Errors specific to GearBox.

@@ -2,7 +2,7 @@
 
 # node-docker
 	D Capture error log output and put somewhere that a user can see.
-	D For every new /usr/local/bin/package symlink created we add to /projects/wplib.box/.project/bin
+	D For every new /usr/local/bin/package symlink created we add to /projects/gearbox/.project/bin
 	D `npm link package` for any package installed using `-g`.
 	D Use `boxuser` instead of root.
 	D -v /projects:/projects.

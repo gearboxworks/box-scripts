@@ -26,9 +26,9 @@ BOX_PROJECTS_ROOT="/projects"
 export BOX_PROJECTS_ROOT
 
 # 0.17.0 - Defines the default project to start.
-DEFAULT_PROJECT="wplib.box"
+DEFAULT_PROJECT="gearbox"
 export DEFAULT_PROJECT
 
-# Change inital SSH directory to be /project/wplib.box
+# Change inital SSH directory to be /project/gearbox
 cd ${BOX_PROJECTS_ROOT}/${DEFAULT_PROJECT}
 

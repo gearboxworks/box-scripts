@@ -7,13 +7,13 @@
      \/  \/   |_|    |______|_|_.__/  |____/ \___/_/\_\
 ```
 
-![GearBox](https://github.com/wplib/box-scripts/blob/master/GearBox-100x.png)
+![GearBox](https://github.com/gearboxworks/box-scripts/blob/master/GearBox-100x.png)
 
 # W007 - Warning project not supported.
 
 ## Cause
 Usually a critical error returned from the `box` command with any of the sub-commands `install`, `ls`, `start`, `stop`, `rm`, `clean` and `refresh`.
-The 'wplib' project definition was changed within the `container` script.
+The 'gearbox' project definition was changed within the `container` script.
 
 ## Common fixes
 Consult GearBox support.
@@ -22,5 +22,5 @@ Consult GearBox support.
 
 
 ## See Also
-[Complete Error code repository for GearBox](https://github.com/wplib/box-scripts/tree/master/docs/errors)
+[Complete Error code repository for GearBox](https://github.com/gearboxworks/box-scripts/tree/master/docs/errors)
 

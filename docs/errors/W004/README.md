@@ -7,9 +7,9 @@
      \/  \/   |_|    |______|_|_.__/  |____/ \___/_/\_\
 ```
 
-![GearBox](https://github.com/wplib/box-scripts/blob/master/docs/GearBox-100x.png)
+![GearBox](https://github.com/gearboxworks/box-scripts/blob/master/docs/GearBox-100x.png)
 
-# W004 - [php-fpm Docker container](https://github.com/wplib/php-fpm-docker/) not running.
+# W004 - [php-fpm Docker container](https://github.com/gearboxworks/php-fpm-docker/) not running.
 
 ## Cause
 The php-fpm Docker container may have been shutdown for some reason or is not starting up properly, or network connectivity is an issue.
@@ -20,5 +20,5 @@ The php-fpm Docker container may have been shutdown for some reason or is not st
 
 
 ## See Also
-[Complete Error code repository for GearBox](https://github.com/wplib/box-scripts/tree/master/docs/errors)
+[Complete Error code repository for GearBox](https://github.com/gearboxworks/box-scripts/tree/master/docs/errors)
 

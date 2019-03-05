@@ -1,4 +1,4 @@
-#License for github.com/wplib/box-scripts
+#License for github.com/gearboxworks/box-scripts
 
 Box Scripts for GearBox is free to use with absolutely no warranty.
 

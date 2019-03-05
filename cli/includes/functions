@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 
-export BOX_NAME="wplib"
+export BOX_NAME="gearbox"
 
 export BOX_ARGS_ALL="$*"
 
@@ -9,7 +9,7 @@ export BOX_ARGS_ALL="$*"
 declare="${BOX_PROJECTS_ROOT:=/projects}"
 
 # Defines the current project in use for a single project box.
-declare="${BOX_CURRENT_PROJECT:=wplib.box}"
+declare="${BOX_CURRENT_PROJECT:=gearbox}"
 
 export BOX_CURRENT_PROJECT_DIR="${BOX_PROJECTS_ROOT}/${BOX_CURRENT_PROJECT}"
 export BOX_PROJECT_DIR="${BOX_PROJECTS_ROOT}/${BOX_CURRENT_PROJECT}"
@@ -57,7 +57,7 @@ export BOX_FILES_DIR="${BOX_CLI_DIR}/files"
 
 export BOX_TESTS_DIR="${BOX_CLI_DIR}/tests"
 
-export BOX_SCRIPTS_REPO="https://github.com/wplib/box-scripts/"
+export BOX_SCRIPTS_REPO="https://github.com/gearboxworks/box-scripts/"
 
 export BOX_DEPLOY_LOCK_SLUG="deploy-lock"
 

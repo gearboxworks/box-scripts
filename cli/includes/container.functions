@@ -1001,7 +1001,7 @@ show_dots()
 #  @param int $max_version - Allows specifying a max version to return so testing can
 #                            continue work even if a newer version is released later.
 #
-#   get_image_name wplib/mysql:5.5.60 60 => mysql-5.5.60
+#   get_image_name gearbox/mysql:5.5.60 60 => mysql-5.5.60
 #   get_image_name mysql:5.5.60       60 => mysql-5.5.60
 #   get_image_name mysql-5.5.60       60 => mysql-5.5.60
 #   get_image_name mysql-5.5          60 => mysql-5.5.60
@@ -1036,10 +1036,10 @@ function get_container_name() {
 #  @param int $max_version - Allows specifying a max version to return so testing can
 #                            continue work even if a newer version is released later.
 #
-#   get_image_name wplib/mysql:5.5.60 60 => wplib/mysql:5.5.60
-#   get_image_name mysql:5.5.60       60 => wplib/mysql:5.5.60
-#   get_image_name mysql-5.5.60       60 => wplib/mysql:5.5.60
-#   get_image_name mysql-5.5          60 => wplib/mysql:5.5.60
+#   get_image_name gearbox/mysql:5.5.60 60 => gearbox/mysql:5.5.60
+#   get_image_name mysql:5.5.60       60 => gearbox/mysql:5.5.60
+#   get_image_name mysql-5.5.60       60 => gearbox/mysql:5.5.60
+#   get_image_name mysql-5.5          60 => gearbox/mysql:5.5.60
 #
 #  @TODO Add ability to also accept a container ID or image ID
 #
@@ -1052,7 +1052,7 @@ function get_image_name() {
     local org="${name%%/*}"
     local image_name="${name}"
     if [ "${name}" == "${org}" ] ; then
-        org="wplib"
+        org="gearbox"
     else
         local image_name="${name#*/}"
     fi
@@ -1073,7 +1073,7 @@ function get_image_name() {
 #  @param int $max_version - Allows specifying a max version to return so testing can
 #                            continue work even if a newer version is released later.
 #
-#       get_latest_patch_version wplib/mysql:5.5 60 => 5.5.60
+#       get_latest_patch_version gearbox/mysql:5.5 60 => 5.5.60
 #
 #  @TODO Add ability to also accept an image ID
 #

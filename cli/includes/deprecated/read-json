@@ -11,7 +11,7 @@ declare="${webadmin:=}"
 declare="${BOX_PROJECTS_ROOT:=}"
 declare="${BOX_PROJECT_PATH:=}"
 
-DEFAULT_PROJECT="wplib"
+DEFAULT_PROJECT="gearbox"
 BOX_PROJECT_DIR=${BOX_PROJECTS_ROOT}/${BOX_PROJECT_PATH}
 BOX_BASE_DIR=/opt/gearbox
 

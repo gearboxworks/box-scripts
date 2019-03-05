@@ -52,12 +52,12 @@ export _TESTS_FUNCS=""
 function tests_IncrPassed() {
     (( _TESTS_PASSED++ ))
     (( _TESTS_TOTAL++ ))
-    echo "P: ${_TESTS_PASSED}, F: ${_TESTS_FAILED}, T: ${_TESTS_TOTAL}, F(): ${_TESTS_FUNCS}" >> /projects/wplib.box/test.log
+    echo "P: ${_TESTS_PASSED}, F: ${_TESTS_FAILED}, T: ${_TESTS_TOTAL}, F(): ${_TESTS_FUNCS}" >> /projects/gearbox/test.log
 }
 function tests_IncrFailed() {
     (( _TESTS_FAILED++ ))
     (( _TESTS_TOTAL++ ))
-    echo "P: ${_TESTS_PASSED}, F: ${_TESTS_FAILED}, T: ${_TESTS_TOTAL}, F(): ${_TESTS_FUNCS}" >> /projects/wplib.box/test.log
+    echo "P: ${_TESTS_PASSED}, F: ${_TESTS_FAILED}, T: ${_TESTS_TOTAL}, F(): ${_TESTS_FUNCS}" >> /projects/gearbox/test.log
 }
 
 #
