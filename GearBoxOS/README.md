@@ -1,1 +1,1 @@
-# GearBoxOS
+# GearboxOS
