@@ -40,9 +40,6 @@ ${CYAN}AT TIME OF RELEASE CANDIDATE${RESET}
  - Run iso-maker
    - https://github.com/gearboxworks/iso-maker
 
- - Untar newly built box into global Vagrant directory:
-   - ~/.vagrant.d/boxes/wplib-VAGRANTSLASH-wplib/{version}
-
  - Clone box from repo:
    - https://github.com/gearboxworks/gearbox
 
@@ -72,7 +69,7 @@ ${CYAN}AT TIME OF RELEASE${RESET}
    - https://github.com/gearboxworks/gearbox/releases
 
  - Update download link:
-   - https://wplib.github.io/box-docs/download/index.html
+   - https://gearbox.github.io/box-docs/download/index.html
 
 
 EOF

@@ -28,7 +28,7 @@ source "${BOX_FUNCTIONS_FILE}"
 ################################################################################
 # This is here for now, should be put somewhere else later.
 
-# Setup boxuser, if not there.
+# Setup gearbox, if not there.
 #
 #  QUESTION:  Why ${BOX_USER}, ${USERID} AND ${BOX_USER_UID}?
 #
@@ -38,12 +38,12 @@ source "${BOX_FUNCTIONS_FILE}"
 USERID="$(id -u "${BOX_USER}")"
 if [ "${USERID}" == "" ]
 then
-	echo "Adding boxuser"
+	echo "Adding gearbox user"
 	sudo useradd -o -d "${BOX_USER_HOME}" -c "GearBox user" -u "${BOX_USER_UID}" -g "${BOX_USER_GID}" -N -s /bin/bash "${BOX_USER}"
 fi
 if [ "${USERID}" != "${BOX_USER_UID}" ]
 then
-	echo "Updating boxuser"
+	echo "Updating gearbox user"
 	sudo usermod -o -d "${BOX_USER_HOME}" -c "GearBox user" -u "${BOX_USER_UID}" -g "${BOX_USER_GID}" -s /bin/bash "${BOX_USER}"
 fi
 sudo usermod -aG adm,cdrom,docker "${BOX_USER}" 2>/dev/null

@@ -15,10 +15,10 @@ export BOX_CURRENT_PROJECT_DIR="${BOX_PROJECTS_ROOT}/${BOX_CURRENT_PROJECT}"
 export BOX_PROJECT_DIR="${BOX_PROJECTS_ROOT}/${BOX_CURRENT_PROJECT}"
 
 
-export BOX_USER="boxuser"
+export BOX_USER="gearbox"
 export BOX_USER_UID="1000"
 export BOX_USER_GID="1000"
-export BOX_USER_HOME="/home/box"
+export BOX_USER_HOME="/home/gearbox"
 export BOX_USER_FILE="${BOX_USER_HOME}/user.json"
 
 export BOX_BASE_DIR="/opt/gearbox"

@@ -3,7 +3,7 @@
 # Provisioning and management script for all containers.
 #
 # This is a low level script that will:
-#	Pull the complete list of WPLib container components from Docker Hub into local JSON files.
+#	Pull the complete list of gearbox container components from Docker Hub into local JSON files.
 #	Manage containers - stop/start and most importantly creating containers using the embedded JSON string in the image.
 
 declare="${ECHO_PREFIX:=}"
@@ -48,8 +48,8 @@ box component ${GREEN}upgrade${RESET} <component>	- Upgrade an existing componen
 ${GREEN}Component management${RESET}
 box component ${GREEN}update${RESET}			- Download latest list of available components.
 box component ${GREEN}available${RESET}			- Show the list of available components.
-box component ${GREEN}shutdown${RESET}			- Shutdown all WPLib related components.
-box component ${GREEN}clean${RESET}			- Remove all WPLib related components.
+box component ${GREEN}shutdown${RESET}			- Shutdown all Gearbox related components.
+box component ${GREEN}clean${RESET}			- Remove all Gearbox related components.
 box component ${GREEN}inspect${RESET} <component>	- Provide detailed info on a components.
 box component ${GREEN}log${RESET} <component>		- Show log files from components.
 box component ${GREEN}pull${RESET} <component>		- Just pull a component image. No install.

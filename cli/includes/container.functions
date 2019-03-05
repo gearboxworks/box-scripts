@@ -3,7 +3,7 @@
 # Provisioning and management functions for all containers.
 #
 # Provides:
-#	Pull the complete list of WPLib container components from Docker Hub into local JSON files.
+#	Pull the complete list of Gearbox container components from Docker Hub into local JSON files.
 #	Manage containers - stop/start and most importantly creating containers using the embedded JSON string in the image.
 
 declare="${ECHO_PREFIX:=}"
@@ -363,11 +363,11 @@ function reallyclean()
 		read RESPONSE
 		if [ "$RESPONSE" == "Yes please" ]
 		then
-			echo "$ECHO_PREFIX ${GREEN}Shutting down all WPLib components.${RESET}"
+			echo "$ECHO_PREFIX ${GREEN}Shutting down all Gearbox components.${RESET}"
 			$0 container shutdown
-			echo "$ECHO_PREFIX ${GREEN}Removing all WPLib components.${RESET}"
+			echo "$ECHO_PREFIX ${GREEN}Removing all Gearbox components.${RESET}"
 			docker container ls -qaf "label=container.project=${BOX_NAME}" | xargs -r docker container rm
-			echo "$ECHO_PREFIX ${GREEN}Removing all WPLib component downloads.${RESET}"
+			echo "$ECHO_PREFIX ${GREEN}Removing all Gearbox component downloads.${RESET}"
 			docker image ls -qaf "label=container.project=${BOX_NAME}" | xargs -r docker image rm
 		fi
 	else
@@ -763,7 +763,7 @@ function shutdown()
 	local RETURN TEMPFILE IMAGE
 	IMAGE=$1
 
-	echo "$ECHO_PREFIX ${GREEN}Stopping all WPLLib components. ${RESET} ... "
+	echo "$ECHO_PREFIX ${GREEN}Stopping all Gearbox components. ${RESET} ... "
 	TEMPFILE="$(mktemp /tmp/box-container.XXX)"
 	docker container ls -qaf "label=container.project=${BOX_NAME}" | xargs docker stop &> $TEMPFILE
 	if [ "$?" == "1" ]
