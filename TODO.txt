@@ -2,10 +2,10 @@
 
 # node-docker
 	D Capture error log output and put somewhere that a user can see.
-	D For every new /usr/local/bin/package symlink created we add to /projects/gearbox/.project/bin
+	D For every new /usr/local/bin/package symlink created we add to /home/gearbox/projects/default/.project/bin
 	D `npm link package` for any package installed using `-g`.
 	D Use `gearbox` instead of root.
-	D -v /projects:/projects.
+	D -v $HOME/projects:/projects.
 
 # container.functions
 	D Support WORKDIR to be $PWD - modify container.functions.

@@ -18,11 +18,11 @@ declare="${BOX_ERROR_FILE:=}"
 
 #
 # Checks if the Virtualbox gearbox mount point is there.
-# Return: [ /projects/gearbox | /var/www | "" ]
+# Return: [ /home/gearbox/projects | /var/www | "" ]
 #
 function check_mount()
 {
-	MOUNT_DIR="$(mount -v | awk '$3~/^(\/projects\/gearbox|\/var\/www)$/{print$3}')"
+	MOUNT_DIR="$(mount -v | awk '$3~/^(\/home\/gearbox\/projects\/default|\/var\/www)$/{print$3}')"
 	echo ${MOUNT_DIR}
 }
 

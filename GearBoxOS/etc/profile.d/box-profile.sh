@@ -22,13 +22,13 @@ HISTCONTROL=erasedups:ignoreboth
 shopt -s histappend
 
 # 0.17.0 - Defines the base project path.
-BOX_PROJECTS_ROOT="/projects"
+BOX_PROJECTS_ROOT="/home/gearbox/projects"
 export BOX_PROJECTS_ROOT
 
 # 0.17.0 - Defines the default project to start.
-DEFAULT_PROJECT="gearbox"
+DEFAULT_PROJECT="default"
 export DEFAULT_PROJECT
 
-# Change inital SSH directory to be /project/gearbox
+# Change inital SSH directory to be /home/gearbox/projects/default
 cd ${BOX_PROJECTS_ROOT}/${DEFAULT_PROJECT}
 
