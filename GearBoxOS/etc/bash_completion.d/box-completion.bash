@@ -120,7 +120,7 @@ _box_component_running()
 {
 	local cur=${COMP_WORDS[COMP_CWORD]}
 
-	COMPREPLY=($(compgen -W "$(docker container ls -af label=container.project=gearbox -f status=running --format='{{.Image}}')" -- $cur))
+	COMPREPLY=($(compgen -W "$(docker container ls -af label=container.organization=gearboxworks -f status=running --format='{{.Image}}')" -- $cur))
 	return 0
 }
 
@@ -129,7 +129,7 @@ _box_component_stopped()
 {
 	local cur=${COMP_WORDS[COMP_CWORD]}
 
-	COMPREPLY=($(compgen -W "$(docker container ls -af label=container.project=gearbox -f status=created -f status=exited --format='{{.Image}}')" -- $cur))
+	COMPREPLY=($(compgen -W "$(docker container ls -af label=container.organization=gearboxworks -f status=created -f status=exited --format='{{.Image}}')" -- $cur))
 	return 0
 }
 
@@ -138,7 +138,7 @@ _box_component_all()
 {
 	local cur=${COMP_WORDS[COMP_CWORD]}
 
-	COMPREPLY=($(compgen -W "$(docker container ls -af label=container.project=gearbox --format='{{.Image}}')" -- $cur))
+	COMPREPLY=($(compgen -W "$(docker container ls -af label=container.organization=gearboxworks --format='{{.Image}}')" -- $cur))
 	return 0
 }
 
@@ -162,7 +162,7 @@ _box_component_dockerhub()
 			do
 				if [ "${IMAGE_VERSION}" != "latest" ]
 				then
-					REPLY="$REPLY gearbox/${IMAGE_NAME}:$IMAGE_VERSION"
+					REPLY="$REPLY gearboxworks/${IMAGE_NAME}:$IMAGE_VERSION"
 				fi
 			done
 		fi

@@ -16,6 +16,7 @@ export            PROJECT_ROOT="${BOX_PROJECTS_ROOT}/${BOX_CURRENT_PROJECT}"
 export         BOX_PROJECT_DIR="${BOX_PROJECTS_ROOT}/${BOX_CURRENT_PROJECT}"
 
 
+export       BOX_ORGANIZATION="gearboxworks"
 export               BOX_USER="gearbox"
 export           BOX_USER_UID="1000"
 export           BOX_USER_GID="1000"
