@@ -8,5 +8,5 @@ clear
 clear
 
 # Make sure the window still exists.
-tput csr 1 $LIMIT
+tput csr 0 $LIMIT
 
