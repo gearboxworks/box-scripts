@@ -15,7 +15,7 @@ case $1 in
 		;;
 
 	*)
-		echo "GearBox: You are running version $(cat "${BOX_BASE_DIR}/version")"
+		echo "Gearbox: You are running version $(cat "${BOX_BASE_DIR}/version")"
 		;;
 esac
 

@@ -525,8 +525,8 @@ function component_create_container()
 				echo -n "$ECHO_PREFIX ${GREEN}Creating component: ${CYAN}${IMAGE}${RESET} ... "
 				TEMPFILE="$(mktemp /tmp/box-container.XXX)"
 
-				# To be fixed in 0.17.2
-				docker create --name ${CONTAINER_NAME} ${IMAGE_RESTART} ${IMAGE_NETWORK} ${IMAGE_PORTS} ${IMAGE_ARGS} ${IMAGE_VOLUMES} --env-file ${BOX_ETC_DIR}/container.env ${IMAGE} &> $TEMPFILE
+				# To be fixed in 1.0.1
+				docker create --name ${CONTAINER_NAME} ${IMAGE_RESTART} ${IMAGE_NETWORK} ${IMAGE_PORTS} ${IMAGE_ARGS} ${IMAGE_VOLUMES} --env-file ${BOX_ETC_DIR}/container.env -v "${BOX_PROJECTS_ROOT}/${DEFAULT_PROJECT}":/project -v ${BOX_PROJECTS_ROOT}:/projects ${IMAGE} &> $TEMPFILE
 
 				if [ "$?" == "1" ]
 				then

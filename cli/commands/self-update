@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Update GearBox scripts.
+# Update Gearbox scripts.
 #
 # This script will handle having itself updated by creating a secondary script that contains
 # all the git commands.
@@ -31,7 +31,7 @@ fi
 if [ ! -d "${BOX_BASE_DIR}" ]
 then
 	cat <<EOF > /tmp/self-update.$$
-echo "# GearBox: Initializing ${BOX_BASE_DIR} with version ${VERSION}"
+echo "# Gearbox: Initializing ${BOX_BASE_DIR} with version ${VERSION}"
 sudo git clone -q "${BOX_SCRIPTS_REPO}" "${BOX_BASE_DIR}" > /dev/null
 
 EOF
@@ -40,7 +40,7 @@ fi
 
 cat <<EOF >> /tmp/self-update.$$
 cd "${BOX_BASE_DIR}"
-echo -n "# GearBox: Updating ${BOX_BASE_DIR} with version ${VERSION} ... "
+echo -n "# Gearbox: Updating ${BOX_BASE_DIR} with version ${VERSION} ... "
 # Fetch the latest tags/branches.
 git fetch -q --all
 # Reset branch - force local changes to be removed.
@@ -57,7 +57,7 @@ git log -1 --format=%cd --date=unix > ${BOX_BASE_DIR}/last-commit-epoch
 git log -1 --format=%cd > ${BOX_BASE_DIR}/last-commit-date
 echo "Done"
 
-echo -n "# GearBox: Fixing links ... "
+echo -n "# Gearbox: Fixing links ... "
 /opt/gearbox/bin/box provision fix
 echo "Done"
 

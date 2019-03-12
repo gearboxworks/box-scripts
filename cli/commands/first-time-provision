@@ -19,12 +19,12 @@ if [ -x /opt/gearbox/bin/box ]
 then
 	if [ ! -f /etc/box-scripts-updated ]
 	then
-		echo "GearBox: Running first time provisioning."
+		echo "Gearbox: Running first time provisioning."
 		touch /etc/box-scripts-updated
 		exec /opt/gearbox/bin/box self-update
 	fi
 else
-	echo "GearBox: ERROR: W021 - box-scripts not present."
+	echo "Gearbox: ERROR: W021 - box-scripts not present."
 	echo "Pull down the latest box-scripts by doing the following:"
 	echo "	sudo git clone -q https://github.com/gearboxworks/box-scripts/ /opt/gearbox"
 	echo "Run an update:"
