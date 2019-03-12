@@ -17,13 +17,13 @@
 		"website": "gearboxworks.org/box"
 	},
 	"stack": {
-		"wordpress/dbserver": "gearbox/mysql:5.5.60",
-		"wordpress/webserver": "gearbox/nginx:1.14.0",
-		"wordpress/processvm": "gearbox/php:7.1.18",
-		"wordpress/cacheserver": "gearbox/redis:4.0.9",
-		"mkdocs/webserver": "gearbox/mkdocs:0.15.3",
-		"box/mailsender": "gearbox/mailhog:1.0.0",
-		"box/webproxy": "gearbox/proxy:1.14.0",
-		"box/sqladmin": "gearbox/adminer:4.6.2"
+		"wordpress/dbserver": "gearboxworks/mysql:5.5.60",
+		"wordpress/webserver": "gearboxworks/nginx:1.14.0",
+		"wordpress/processvm": "gearboxworks/php:7.1.18",
+		"wordpress/cacheserver": "gearboxworks/redis:4.0.9",
+		"mkdocs/webserver": "gearboxworks/mkdocs:0.15.3",
+		"box/mailsender": "gearboxworks/mailhog:1.0.0",
+		"box/webproxy": "gearboxworks/proxy:1.14.0",
+		"box/sqladmin": "gearboxworks/adminer:4.6.2"
 	}
 }
