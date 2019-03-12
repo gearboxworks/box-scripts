@@ -19,8 +19,20 @@ declare="${BOX_PROJECT_DIR:=}"
 declare="${BOX_PROJECT_FILE:=}"
 declare="${BOX_RELEASE_JSON:=}"
 declare="${BOX_SQL_DIR:=}"
-declare="${BOX_RELEASE_DIR:=}"cd
+declare="${BOX_RELEASE_DIR:=}"
 declare="${BOX_FUNCTIONS_FILE:=}"
+
+if [ -z "${BOX_FUNCTIONS_FILE}" ]
+then
+	echo "BOX_FUNCTIONS_FILE not defined. Exiting."
+	exit 1
+fi
+
+if [ ! -f "${BOX_FUNCTIONS_FILE}" ]
+then
+	echo "$BOX_FUNCTIONS_FILE not found. Exiting."
+	exit 1
+fi
 
 source "${BOX_FUNCTIONS_FILE}"
 
