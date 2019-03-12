@@ -2,6 +2,7 @@
 
 declare="${BOX_PROJECT_FILE:=}"
 declare="${BOX_ETC_DIR:=}"
+declare="${BOX_ROOT_ETC_DIR:=}"
 declare="${BOX_PROJECT_DIR:=}"
 
 function get_raw_project_file() {

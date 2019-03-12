@@ -152,12 +152,12 @@ _box_component_dockerhub()
 	local REPLY
 	local cur=${COMP_WORDS[COMP_CWORD]}
 
-	IMAGES="$(jq -r '.results|.[]|.name' /opt/gearbox/etc/repositories.json | sort -u)"
+	IMAGES="$(jq -r '.results|.[]|.name' /etc/gearbox/repositories.json | sort -u)"
 	for IMAGE_NAME in $IMAGES
 	do
-		if [ -f /opt/gearbox/etc/images/${IMAGE_NAME}.json ]
+		if [ -f /etc/gearbox/images/${IMAGE_NAME}.json ]
 		then
-			VERSIONS="$(jq -r '.results|.[]|.name' /opt/gearbox/etc/images/${IMAGE_NAME}.json)"
+			VERSIONS="$(jq -r '.results|.[]|.name' /etc/gearbox/images/${IMAGE_NAME}.json)"
 			for IMAGE_VERSION in $VERSIONS
 			do
 				if [ "${IMAGE_VERSION}" != "latest" ]
