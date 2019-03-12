@@ -30,5 +30,8 @@ DEFAULT_PROJECT="default"
 export DEFAULT_PROJECT
 
 # Change inital SSH directory to be /home/gearbox/projects/default
-cd ${BOX_PROJECTS_ROOT}/${DEFAULT_PROJECT}
+if [ -d "${BOX_PROJECTS_ROOT}/${DEFAULT_PROJECT}" ]
+then
+	cd "${BOX_PROJECTS_ROOT}/${DEFAULT_PROJECT}"
+fi
 
