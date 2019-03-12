@@ -101,12 +101,12 @@ _box_component()
 			return 0
 			;;
 
-		'list'|'ls'|'inspect'|'log'|'uninstall'|'activate'|'deactivate'|'refresh')
+		'list'|'ls'|'inspect'|'log'|'uninstall'|'deactivate'|'refresh')
 			_box_component_all
 			return 0
 			;;
 
-		'pull'|'install')
+		'pull'|'install'|'activate')
 			_box_component_dockerhub
 			return 0
 			;;
