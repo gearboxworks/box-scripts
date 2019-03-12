@@ -15,7 +15,7 @@ source "${BOX_FUNCTIONS_FILE}"
 user_help() {
 	cat <<EOF
 
-${YELLOW}GearBox ${GREEN}CLI${RESET} ${GREEN}user${RESET} usage:
+${YELLOW}Gearbox ${GREEN}CLI${RESET} ${GREEN}user${RESET} usage:
 
 box ${YELLOW}user${RESET}	                - Show this help.
 

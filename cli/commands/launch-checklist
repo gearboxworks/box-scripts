@@ -8,7 +8,7 @@ declare="${RESET:=}"
 
 	cat <<EOF
 
-${YELLOW}GearBox ${GREEN}Version Launch Checklist${RESET}
+${YELLOW}Gearbox ${GREEN}Version Launch Checklist${RESET}
 
 ${CYAN}BEFORE DEVELOPMENT${RESET}
  - Decide on a release number.
