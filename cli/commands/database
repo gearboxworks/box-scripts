@@ -16,7 +16,7 @@ declare="${STACK:=}"
 
 
 
-DEFAULT_PROJECT="wplib"
+DEFAULT_PROJECT="gearbox"
 
 DB_HOST_IP="172.42.0.1"
 
@@ -385,7 +385,7 @@ You can reconstitute the orginal file ${sql_filename} if the chuncks are located
 ${BOX_PROJECTS_ROOT}/${BOX_PROJECT_PATH}/sql/ as ${BOX_PROJECTS_ROOT}/${BOX_PROJECT_PATH}/sql/${sql_filename}/ and the files have not been modified
 since they were generated using the 'box database unchunk "${sql_filename}"' command
 when inside of GearBox which you can acccess from your host computer using the
-bash or batch/Powershell command 'vagrant ssh'.
+bash or batch/Powershell command 'gearbox ssh'.
 
 In the case you do not have GearBox and cannot install it you can reconstitute the
 original SQL file in Bash (e.g. Mac and Linux) using this command when run from the
@@ -395,7 +395,7 @@ directory with contains the XXX subdirectory containing the chunks:
     cat "${sql_filename}/${sql_basename}"-???."${ext}.chunk" > $sql_filename
 
 On Windows this is what (WE THINK) you will need to do, though we have not tested it
-yet (contact us here https://github.com/wplib/box-scripts/issues if these commands
+yet (contact us here https://github.com/gearboxworks/box-scripts/issues if these commands
 do not work for you, please):
 
     ren "${sql_filename}/" "${sql_filename}.tmp/"
@@ -404,8 +404,8 @@ do not work for you, please):
 FCPS is licensed via GPLv3: https://www.gnu.org/licenses/gpl-3.0.en.html
 Copyright (C) 2018 NewClarity Consulting LLC; All rights reserved worldwide
 
-[1] https://github.com/wplib/box-scripts
-[2] https://github.com/wplib/wplib-box
+[1] https://github.com/gearboxworks/box-scripts
+[2] https://github.com/gearboxworks/
 EOF
 
     if [ $? -ne 0 ]; then
@@ -490,10 +490,16 @@ EOF
 }
 
 ################################################################################
-CMD="$1"
-shift
+declare="${IMAGES:=}"
+declare="${BOX_FUNCTIONS_FILE:=}"
+
+source "${BOX_FUNCTIONS_FILE}"
+
 # Creates IMAGES and STACK env variables.
 readJSON
+
+CMD="$1"
+shift
 
 if [ "${STACK["wordpress/dbserver"]}" == "" ]
 then

@@ -24,7 +24,7 @@ echo phpversion();
 echo "\n";
 ?>
 EOF
-# exec_cmd curl -sSH "'Host: wplib.box'" http://127.0.0.1/test.php
+# exec_cmd curl -sSH "'Host: gearbox.local'" http://127.0.0.1/test.php
 exec_cmd curl -sS http://127.0.0.1/test.php
 
 

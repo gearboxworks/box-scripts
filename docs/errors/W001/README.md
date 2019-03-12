@@ -7,7 +7,7 @@
      \/  \/   |_|    |______|_|_.__/  |____/ \___/_/\_\
 ```
 
-![GearBox](https://github.com/wplib/box-scripts/blob/master/docs/GearBox-100x.png)
+![GearBox](https://github.com/gearboxworks/box-scripts/blob/master/docs/GearBox-100x.png)
 
 # W001 - /var/www directory not mounted
 
@@ -20,4 +20,4 @@ If you are seeing this, then the /var/www directory has not been mounted via Vir
 
 
 ## See Also
-[Complete Error code repository for GearBox](https://github.com/wplib/box-scripts/tree/master/docs/errors)
+[Complete Error code repository for GearBox](https://github.com/gearboxworks/box-scripts/tree/master/docs/errors)

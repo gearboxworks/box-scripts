@@ -7,7 +7,7 @@
      \/  \/   |_|    |______|_|_.__/  |____/ \___/_/\_\
 ```
 
-![GearBox](https://github.com/wplib/box-scripts/blob/master/GearBox-100x.png)
+![GearBox](https://github.com/gearboxworks/box-scripts/blob/master/GearBox-100x.png)
 
 # W009 - Error image not found locally.
 
@@ -22,5 +22,5 @@ Run a `box container create <image name>` to download and install the container.
 
 
 ## See Also
-[Complete Error code repository for GearBox](https://github.com/wplib/box-scripts/tree/master/docs/errors)
+[Complete Error code repository for GearBox](https://github.com/gearboxworks/box-scripts/tree/master/docs/errors)
 

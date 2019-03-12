@@ -10,11 +10,11 @@ case $1 in
 		readJSON
 
 		echo "Components installed:"
-		echo $IMAGES | sed 's/wplib\//\n/g; s/:/\t/g'
+		echo $IMAGES | sed 's/gearbox\//\n/g; s/:/\t/g'
 		;;
 
 	*)
-		box container ls
+		box component ls
 		;;
 esac
 

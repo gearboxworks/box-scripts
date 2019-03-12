@@ -49,7 +49,7 @@ if [ "" == "${error}" ];then
     case "${command_type}" in
        "bash")
 		shift
-            source "${command_file}" "$@"
+            "${command_file}" "$@"
             error=$?
             ;;
        "php")

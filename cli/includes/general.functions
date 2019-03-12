@@ -17,12 +17,12 @@ declare="${BOX_ARGS_ALL:=}"
 declare="${BOX_ERROR_FILE:=}"
 
 #
-# Checks if the Virtualbox wplib.box mount point is there.
-# Return: [ /projects/wplib.box | /var/www | "" ]
+# Checks if the Virtualbox gearbox mount point is there.
+# Return: [ /home/gearbox/projects | /var/www | "" ]
 #
 function check_mount()
 {
-	MOUNT_DIR="$(mount -v | awk '$3~/^(\/projects\/wplib.box|\/var\/www)$/{print$3}')"
+	MOUNT_DIR="$(mount -v | awk '$3~/^(\/home\/gearbox\/projects\/default|\/var\/www)$/{print$3}')"
 	echo ${MOUNT_DIR}
 }
 
@@ -618,8 +618,8 @@ function StrToUpper() {
 function suggest_help_on_slack() {
     alert "If you need help resolving an issue please ask for support via Slack:"
     alert ""
-    alert "\t${CYAN}Our Slack:      ${GREEN}https://wplib.slack.org${RESET}"
-    alert "\t${CYAN}Join our Slack: ${GREEN}https://launchpass/wplib${RESET}"
+    alert "\t${CYAN}Our Slack:      ${GREEN}https://gearbox.slack.org${RESET}"
+    alert "\t${CYAN}Join our Slack: ${GREEN}https://launchpass/gearbox${RESET}"
     alert ""
 }
 

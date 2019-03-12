@@ -7,3 +7,5 @@ SYNCED
 GearBoxOS/var/
 var/
 lost+found/
+last-commit-date
+last-commit-epoch

@@ -10,12 +10,12 @@ readJSON
 
 case $1 in
 	'-s'|'--short')
-		box container start ${IMAGES} &>/dev/null
+		box component start ${IMAGES} &>/dev/null
 		box status --short
 		;;
 
 	*)
-		box container start ${IMAGES}
+		box component start ${IMAGES}
 		;;
 esac
 
